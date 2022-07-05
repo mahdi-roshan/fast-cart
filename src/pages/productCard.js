@@ -1,9 +1,9 @@
 const ProductCard = () => {
   return (
-    <>
-      <div className="container h-min-screen py-4 flex items-center justify-center mx-auto">
+    <div className="dark:bg-slate-900 m-0 p-0">
+      <div className="container h-screen flex items-center justify-center mx-auto">
         <div className="md:w-[40%] w-[90%]">
-          <div className="p-4 border bg-white dark:bg-slate-700 rounded-xl shadow-md">
+          <div className="p-4 border dark:border-slate-800 bg-white dark:bg-slate-700 rounded-xl shadow-lg">
             <div className="w-full mb-3">
               <img
                 src="https://images.unsplash.com/photo-1577982787983-e07c6730f2d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2059&q=80"
@@ -60,11 +60,11 @@ const ProductCard = () => {
                             data-action="decrement"
                             class=" bg-slate-300 dark:bg-slate-600 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer outline-none"
                           >
-                            <span class="m-auto text-2xl font-thin">−</span>
+                            <span class="m-auto text-2xl font-thin dark:text-white text-gray-900">−</span>
                           </button>
                           <input
                             type="number"
-                            class="outline-none focus:outline-none text-center w-full bg-slate-300 dark:bg-slate-600 dark: font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none"
+                            class="outline-none focus:outline-none text-center w-full bg-slate-300 dark:bg-slate-600 dark: font-semibold text-md focus:text-black  md:text-basecursor-default flex items-center text-gray-900 dark:text-white"
                             name="custom-input-number"
                             defaultValue="1"
                           ></input>
@@ -72,7 +72,7 @@ const ProductCard = () => {
                             data-action="increment"
                             class="bg-slate-300 dark:bg-slate-600 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-l cursor-pointer"
                           >
-                            <span class="m-auto text-2xl font-thin">+</span>
+                            <span class="m-auto text-2xl font-thin dark:text-white text-gray-900">+</span>
                           </button>
                         </div>
                       </div>
@@ -175,7 +175,7 @@ const ProductCard = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -3,7 +3,7 @@ const ProductCard = () => {
     <>
       <div className="container h-min-screen py-4 flex items-center justify-center mx-auto">
         <div className="md:w-[40%] w-[90%]">
-          <div className="p-4 border dark:bg-slate-700 rounded-xl shadow-md">
+          <div className="p-4 border bg-white dark:bg-slate-700 rounded-xl shadow-md">
             <div className="w-full mb-3">
               <img
                 src="https://images.unsplash.com/photo-1577982787983-e07c6730f2d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2059&q=80"
@@ -15,10 +15,10 @@ const ProductCard = () => {
               {/* title */}
               <div className="flex flex-wrap ">
                 <div className="flex items-center w-full justify-between min-w-0 ">
-                  <h2 className="text-xl font-bold ml-auto cursor-pointer text-gray-200 hover:text-purple-500 truncate ">
+                  <h2 className="text-xl font-bold ml-auto cursor-pointer text-gray-800 dark:text-gray-200 hover:text-purple-500 truncate ">
                     کفش روزمره مردانه Emery مدل 30604
                   </h2>
-                  <div className="text-lg text-slate-700 font-semibold bg-purple-300 inline-block p-1 rounded-lg">
+                  <div className="text-lg text-white dark:text-slate-700 font-semibold bg-purple-500 dark:bg-purple-300 inline-block p-1 rounded-lg">
                     299,000 تومان
                   </div>
                 </div>
@@ -32,13 +32,13 @@ const ProductCard = () => {
                     <div>
                       <label
                         for="countries"
-                        class="block mb-2 text-sm font-semibold text-gray-900 dark:text-gray-200"
+                        class="block mb-2 text-sm font-semibold text-gray-800 dark:text-gray-200"
                       >
                         ویژگی
                       </label>
                       <select
                         id="countries"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-slate-600 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        class="bg-slate-300 dark:bg-slate-600 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-slate-600 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                       >
                         <option selected>Choose a country</option>
                         <option value="US">United States</option>
@@ -51,26 +51,26 @@ const ProductCard = () => {
                       <div class="custom-number-input h-10 w-full">
                         <label
                           for="custom-input-number"
-                          class="w-full text-gray-200 text-sm font-semibold"
+                          class="w-full text-gray-800 dark:text-gray-200 text-sm font-semibold"
                         >
                           تعداد
                         </label>
                         <div class="flex flex-row h-10 w-full rounded-lg relative bg-transparent mt-1">
                           <button
                             data-action="decrement"
-                            class=" bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer outline-none"
+                            class=" bg-slate-300 dark:bg-slate-600 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-r cursor-pointer outline-none"
                           >
                             <span class="m-auto text-2xl font-thin">−</span>
                           </button>
                           <input
                             type="number"
-                            class="outline-none focus:outline-none text-center w-full bg-gray-300 font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none"
+                            class="outline-none focus:outline-none text-center w-full bg-slate-300 dark:bg-slate-600 dark: font-semibold text-md hover:text-black focus:text-black  md:text-basecursor-default flex items-center text-gray-700  outline-none"
                             name="custom-input-number"
                             defaultValue="1"
                           ></input>
                           <button
                             data-action="increment"
-                            class="bg-gray-300 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-l cursor-pointer"
+                            class="bg-slate-300 dark:bg-slate-600 text-gray-600 hover:text-gray-700 hover:bg-gray-400 h-full w-20 rounded-l cursor-pointer"
                           >
                             <span class="m-auto text-2xl font-thin">+</span>
                           </button>
@@ -79,7 +79,7 @@ const ProductCard = () => {
                     </div>
                     <div>
                       <label
-                        className="text-gray-200 mb-2 font-semibold"
+                        className="text-sm text-gray-800 dark:text-gray-200 mb-2 font-semibold"
                         for="browser"
                       >
                         استان
@@ -87,7 +87,7 @@ const ProductCard = () => {
                       <input
                         type="text"
                         list="data"
-                        class="bg-gray-50 border border-gray-300 text-gray-100 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-slate-600 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        class="bg-slate-300 dark:bg-slate-600 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                       />
 
                       <datalist id="data">
@@ -99,7 +99,7 @@ const ProductCard = () => {
                     </div>
                     <div>
                       <label
-                        className="text-gray-200 mb-2 font-semibold"
+                        className="text-sm text-gray-800 dark:text-gray-200 mb-2 font-semibold"
                         for="browser"
                       >
                         شهر
@@ -107,7 +107,7 @@ const ProductCard = () => {
                       <input
                         type="text"
                         list="data"
-                        class="bg-gray-50 border border-gray-300 text-gray-100 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-slate-600 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        class="bg-slate-300 dark:bg-slate-600 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                       />
 
                       <datalist id="data">
@@ -119,7 +119,7 @@ const ProductCard = () => {
                     </div>
                     <div className="mb-2">
                       <label
-                        className="text-gray-200 mb-2 font-semibold"
+                        className="text-sm text-gray-800 dark:text-gray-200 mb-2 font-semibold"
                         for="browser"
                       >
                         نام و نام خانوادگی
@@ -127,13 +127,13 @@ const ProductCard = () => {
                       <input
                         type="text"
                         id="name"
-                        class="bg-gray-50 border border-gray-300 text-gray-100 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-slate-600 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        class="bg-slate-300 dark:bg-slate-600 border border-gray-300 text-gray-900  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required
                       />
                     </div>
                     <div className="mb-2">
                       <label
-                        className="text-gray-200 mb-2 font-semibold"
+                        className="text-sm text-gray-800 dark:text-gray-200 mb-2 font-semibold"
                         for="browser"
                       >
                         شماره همراه
@@ -141,13 +141,13 @@ const ProductCard = () => {
                       <input
                         type=""
                         id="number"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-slate-600 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        class="bg-slate-300 dark:bg-slate-600 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required
                       />
                     </div>
                     <div className="col-span-2 mb-2">
                       <label
-                        className="text-gray-200 mb-2 font-semibold"
+                        className="text-sm text-gray-800 dark:text-gray-200 mb-2 font-semibold"
                         for="browser"
                       >
                         نشانی
@@ -155,7 +155,7 @@ const ProductCard = () => {
                       <textarea
                         id="message"
                         rows="4"
-                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-slate-600 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        class="block p-2.5 w-full text-sm text-gray-900 bg-slate-300 dark:bg-slate-600 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                       ></textarea>
                     </div>
                   </div>
